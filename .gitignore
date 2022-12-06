@@ -1,0 +1,9 @@
+[Oo]bj/
+[Bb]in/
+
+[Ll]ogs/
+
+.idea/
+
+.DS_Store
+.env

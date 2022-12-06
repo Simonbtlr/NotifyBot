@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F429E978-A871-4B8B-BB19-54CC22BA46A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyBot", "src\NotifyBot\NotifyBot.csproj", "{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{3200573E-EDF9-4947-82DE-152C69ACF7EE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.env = .env
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C} = {F429E978-A871-4B8B-BB19-54CC22BA46A8}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

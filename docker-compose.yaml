@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  postgres:
+    container_name: "postgres"
+    image: postgres:13
+    environment:
+      POSTGRES_DB: "notifyer"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - .:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    command: ["postgres", "-c", "log_statement=all"]
+  
+  seq:
+    container_name: "seq"
+    image: datalust/seq
+    volumes:
+      - ./src/NotifyBot/Logs:/data
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5002:80"
