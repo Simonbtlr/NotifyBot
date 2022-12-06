@@ -7,9 +7,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{3200573E-EDF9-4947-82DE-152C69ACF7EE}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		.env = .env
 		docker-compose.yaml = docker-compose.yaml
+		src\NotifyBot\.env = src\NotifyBot\.env
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyBot.Application", "src\NotifyBot.Application\NotifyBot.Application.csproj", "{2040E05C-B153-48C6-9019-B1F47AD3DEA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,11 +20,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C} = {F429E978-A871-4B8B-BB19-54CC22BA46A8}
+		{2040E05C-B153-48C6-9019-B1F47AD3DEA1} = {F429E978-A871-4B8B-BB19-54CC22BA46A8}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAB272AC-7B9C-48C2-BBA3-0856D28AE35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2040E05C-B153-48C6-9019-B1F47AD3DEA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2040E05C-B153-48C6-9019-B1F47AD3DEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2040E05C-B153-48C6-9019-B1F47AD3DEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2040E05C-B153-48C6-9019-B1F47AD3DEA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
